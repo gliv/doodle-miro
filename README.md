@@ -38,10 +38,10 @@ npx ngrok http 8080
 
 ## Todo
 
-[ ] make interactive (currently need to use colors to indicate availability - would be nice to just click)
+- [ ] make interactive (currently need to use colors to indicate availability - would be nice to just click)
 
-[ ] actually also create a Doodle poll via API
+- [ ] actually also create a Doodle poll via API
 
-[ ] get user information from miro to populate participants in Doodle API (can we get the email?)
+- [ ] get user information from miro to populate participants in Doodle API (can we get the email?)
 
-[ ] connect calendar and send out invitations to a meeting (add a button below each time column to book it)
+- [ ] connect calendar and send out invitations to a meeting (add a button below each time column to book it)
