@@ -1,4 +1,3 @@
-const timeSlots = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
 const columnWidth = 80
 const rowHeight = 60
 const fontSize = 28
