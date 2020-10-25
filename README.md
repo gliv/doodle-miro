@@ -1,5 +1,7 @@
 # doodle-miro - Find a time to meet
 
+![Alt text](images/findatimetomeet.png?raw=true "Find a time to meet")
+
 ## Intro
 
 This is a sample app biult on Miro web SDK. It shows how to create and position on the board multiple widgets of different types and render create custom interfaces in the library. It creates a simple 
