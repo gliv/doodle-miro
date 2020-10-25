@@ -1,17 +1,18 @@
+# doodle-miro
+
 ## Intro
 
-This is a sample roadmap template builder you can build on Miro web SDK. It shows how to create and position on the
-board multiple widgets of different types and render create custom interfaces in the library.
+This is a sample app biult on Miro web SDK. It shows how to create and position on the board multiple widgets of different types and render create custom interfaces in the library. It creates a simple 
+grid to vote on availability similar to Doodle.com.
 
-<img src="images/template-builder.gif" alt="template-builder" />
 
 ## Preparation
 
 ###### Step 1. Clone the repo and install the dependencies
 
 ```bash
-git clone https://github.com/miroapp/app-examples.git
-cd app-examples/template-builder
+git clone <this repo>
+cd doodle-miro
 ```
 
 ###### Step 2. Start a server locally using `serve`
