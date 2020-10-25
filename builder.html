@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+
+  <body>
+    <div class="scrollable-container">
+      <h2>Whom to invite?</h2>
+      <button id="addRow" class="add-row-button" onclick="addRowInput('', rowsPeopleContainer)">Add Person</button>
+      <div id="rowsPeople"></div>
+      <h2>When to meet?</h2>
+      <button id="addRow" class="add-row-button" onclick="addRowInput('', rowsTimesContainer)">Add Times</button>
+      <div id="rowsTimes"></div>
+      <button id="submit" class="build-button">Find a time to meet</button>
+    </div>
+    <script src="https://miro.com/app/static/sdk.1.1.js"></script>
+    <script src="src/builder.js"></script>
+    <script>
+      const rowsPeopleContainer = document.getElementById('rowsPeople')
+      const rowsTimesContainer = document.getElementById('rowsTimes')
+
+      addRowInput('Jack', rowsPeopleContainer)
+      addRowInput('Sue', rowsPeopleContainer)
+      addRowInput('Mike', rowsPeopleContainer)
+      addRowInput('Monday 3pm', rowsTimesContainer)
+      addRowInput('Monday 4pm', rowsTimesContainer)
+      addRowInput('Tuesday 9am', rowsTimesContainer)
+      addRowInput('Tuesday 10am', rowsTimesContainer)
+      addRowInput('Thursday 10am', rowsTimesContainer)
+      
+      document.getElementById('submit').addEventListener('click', () => drawTemplate(getPeopleLabels(),getTimesLabels()))
+
+      function addRowInput(value, container) {
+        const row = document.createElement('div')
+        row.classList.add('row')
+        container.appendChild(row)
+
+        //create input
+        const input = document.createElement('input')
+        input.type = 'text'
+        input.classList.add('row-input')
+        input.value = value
+        row.appendChild(input)
+
+        //create delete button
+        const button = document.createElement('button')
+        button.textContent = 'X'
+        button.classList.add('delete-button')
+        button.addEventListener('click', () => {
+          row.remove()
+        })
+        row.appendChild(button)
+      }
+
+      function getPeopleLabels() {
+        return Array.from(rowsPeopleContainer.querySelectorAll('input')).map((el) => el.value)
+      }
+
+      function getTimesLabels() {
+        return Array.from(rowsTimesContainer.querySelectorAll('input')).map((el) => el.value)
+      }
+    </script>
+  </body>
+</html>
