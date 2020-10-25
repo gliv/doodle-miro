@@ -7,7 +7,7 @@ function run() {
   miro.initialize({
     extensionPoints: {
       toolbar: {
-        title: 'Template builder',
+        title: 'Find a time to meet',
         toolbarSvgIcon: icon24,
         librarySvgIcon: icon48,
         onClick: () => {

@@ -1,4 +1,4 @@
-# doodle-miro
+# doodle-miro - Find a time to meet
 
 ## Intro
 
