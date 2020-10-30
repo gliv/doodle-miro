@@ -4,8 +4,7 @@
 
 ## Intro
 
-This is a sample app biult on Miro web SDK. It shows how to create and position on the board multiple widgets of different types and render create custom interfaces in the library. It creates a simple 
-grid to vote on availability similar to Doodle.com.
+This is a sample app built on Miro web SDK. It shows how to create and position on the board multiple widgets of different types and render custom interfaces in the library. It creates a simple grid to vote on availability similar to Doodle.com.
 
 
 ## Preparation
